@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    
+    <title>ISS LOCATION </title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+
+        <h1>Real-time International Space Station Location</h1>
+    
+    
+    <!-- The video -->
+<video autoplay muted loop id="myVideo">
+    <source src="/kklt3.mp4" type="video/mp4">
+  </video>
+
+  
+    <div class="flex">
+        <!-- <div id="issMap"></div> -->
+        <div id="iMap"></div>
+        <div class="info">
+            <p>
+                Time  <span id="time"></span>
+                
+            </p>
+            <p>
+                latitude  <span id="lat"></span>°
+            </p>
+            <p>
+                longitude  <span id="lon"></span>°  
+            </p>   
+            <p>
+                velocity <span id="vel"></span>
+            </p>   
+            <p id="visidiv">
+                The ISS is in  <span id="visi"></span>
+            </p>   
+              
+                
+                
+            
+        </div>
+        
+    </div>
+    
+    <footer>© 2022 created by Onwuliri Uchenna</footer>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <!-- <script src="/js/JSON - Working with Data and APIs in JavaScript.js"></script> -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
